@@ -1,0 +1,131 @@
+/* Reset default margin and padding for the entire page */
+html, body, h1, h2, ol, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #ffe6e6; /* Light pink color */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Center the content on the page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+}
+
+/* Style the company name and buttons in the header */
+#company-name {
+    text-align: center;
+    font-size: 48px;
+    padding: 20px;
+    color: #ff33cc; /* Pink color */
+}
+
+.buttons {
+    text-align: center;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 15px 30px;
+    background-color: #ff33cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #ff0077; /* Darker pink on hover */
+}
+
+/* Style the services section */
+.content {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 32px;
+    color: #ff33cc;
+    text-align: center;
+}
+
+/* Highlighted text style */
+.highlight {
+    color: #ff33cc; /* Pink color */
+    font-weight: bold;
+}
+
+/* Style for the list of sub-services */
+ol ul {
+    list-style-type: disc;
+}
+
+/* Add spacing between services */
+.service {
+    margin-bottom: 20px;
+}
+
+/* Style for sub-services */
+.sub-service {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Style for the contact information */
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: "\2022"; /* Add bullet symbol */
+    color: #ff33cc; /* Pink color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Style for contact buttons */
+#about-us, #contact-us {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff33cc;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style for phone and email contact information */
+#contact-us ul {
+    padding: 20px;
+    background-color: #ff0077;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/* Style for Instagram contact information */
+#contact-us ul li:last-child::before {
+    content: "\f16d"; /* Instagram icon */
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 10px;
+}
